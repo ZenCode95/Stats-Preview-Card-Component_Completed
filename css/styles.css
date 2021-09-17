@@ -1,0 +1,97 @@
+/* font imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/* universal styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  background-color: hsl(233, 47%, 7%);
+}
+
+/* card-container & main-card styles */
+
+.card-container {
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 1250px;
+  border-radius: 8px;
+}
+
+.main-card {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(244, 38%, 16%);
+}
+
+/* main-card--info styles */
+
+.main-card--info {
+  padding: 4rem 4rem 4rem 4.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.title {
+  padding: 0 4rem 1.5rem 0;
+}
+
+.title p {
+  font-weight: 700;
+  font-size: 38px;
+  color: hsl(0, 0%, 100%);
+}
+
+.title span {
+  color: hsl(277, 64%, 61%);
+}
+
+.paragraph p {
+  padding: 0 7rem 7rem 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stats {
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 26px;
+  color: hsl(0, 0%, 100%);
+}
+
+.stat-description {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+/* main-card--img styles */
+
+.main-card--img {
+  background-image: url("../img/image-header-desktop.jpg");
+  background-size: cover;
+}
+
+.img-overlay {
+  min-height: 500px;
+  background-color: hsla(280, 60%, 30%, 0.6);
+}
